@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>createImageBitmap bug</title>
+</head>
+
+<body>
+    <h3>File</h3>
+    <p>Select the bug.jpg from within the repo</p>
+    <div>
+        <input id="upload" type="file">
+        <img id="original" width="307" height="408" />
+    </div>
+    <h3>Controls</h3>
+    <div>
+        <label for="tileX">Tile X</label>
+        <input type="range" min="0" max="3" value="1" class="slider" id="tileX">
+
+        <label for="tileY">Tile Y</label>
+        <input type="range" min="0" max="3" value="1" class="slider" id="tileY">
+    </div>
+    <h3>Result</h3>
+    <div>
+        <canvas id="output" style="width: 40vw; height: fit-content;"></canvas>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
